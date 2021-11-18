@@ -19,21 +19,26 @@
 </head>
 
 <body class="mx-4 ">
-    <form>
-        <label class="font-weight-bold required" for="Name">Name <span style=color:red;>*</span> </label>
-        <div class="form-row" id="Name">
+    <h1 id="title" class=" text-center"> Survey Form</h1>
+    <p id="description">Survey Form for Rating</p>
+    <form id="survey-form" tag='FORM' class='survey-form'>
+        <label class="font-weight-bold required" for="Name" id="first-Name">Name <span style=color:red;>*</span>
+        </label>
+        <div class="form-group form-row" id="Name">
             <div class="col-sm-4">
-                <input type="text" id="Name" class="form-control" placeholder="First name" required>
-                <small id="First" class="form-text text-muted">First</small>
+                <input type="text" id="first-name" name="input" class="form-control" placeholder=" Enter First name"
+                    required>
+                <label id="name-label">First</label><small id="First" class="form-text text-muted"></small>
             </div>
             <div class="col-sm-4">
-                <input type="text" id="Last" class="form-control" placeholder="Last name" required>
-                <small id="Last" class="form-text text-muted">Last</small>
+                <input type="text" id="last-name" class="form-control" placeholder="Enter Last name" required>
+                <label id="name-label">Last</label> <small id="Last" class="form-text text-muted"></small>
             </div>
 
             <div class="col-sm-8 my-4" id="Email">
-                <label class="font-weight-bold" for="Email">Email <span style=color:red;>*</span></label>
-                <input type="email" class="form-control" placeholder="Email" required>
+                <label id="email-label" class="font-weight-bold" for="Email">Email <span
+                        style=color:red;>*</span></label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
             </div>
         </div>
 
@@ -42,122 +47,122 @@
         <div width=100%>
             <h3 for="rating" class="font-weight-bold ">Your Experiance <span style=color:red;>*</span></h3>
             <div class="stars">
-                <form action="" required>
-                    <input class="star star-5" id="star-5" type="radio" name="star" />
-                    <label class="star star-5" for="star-5"></label>
-                    <input class="star star-4" id="star-4" type="radio" name="star" />
-                    <label class="star star-4" for="star-4"></label>
-                    <input class="star star-3" id="star-3" type="radio" name="star" />
-                    <label class="star star-3" for="star-3"></label>
-                    <input class="star star-2" id="star-2" type="radio" name="star" />
-                    <label class="star star-2" for="star-2"></label>
-                    <input class="star star-1" id="star-1" type="radio" name="star" />
-                    <label class="star star-1" for="star-1"></label>
 
-                </form>
+                <input value="#" class="star star-5" id="star-5" type="radio" name="star" />
+                <label class="star star-5" for="star-5"></label>
+                <input value="#" class="star star-4" id="star-4" type="radio" name="star" />
+                <label class="star star-4" for="star-4"></label>
+                <input value="#" class="star star-3" id="star-3" type="radio" name="star" />
+                <label class="star star-3" for="star-3"></label>
+                <input value="#" class="star star-2" id="star-2" type="radio" name="star" />
+                <label class="star star-2" for="star-2"></label>
+                <input value="#" class="star star-1" id="star-1" type="radio" name="star" />
+                <label class="star star-1" for="star-1"></label>
+
+
 
             </div>
             <p> Overall how would you rate you experiance with us?</p>
         </div>
+
+        <div>
+            <h3 class="font-weight-bold">How satisfied are you with ? <span style=color:red;>*</span></h3>
+            <table class="table my-4 table-striped table-hover" width=100% required>
+
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Very Unsatisfied</th>
+                        <th scope="col">Unsatisfied</th>
+                        <th scope="col">Neutral</th>
+                        <th scope="col">Satisfied</th>
+                        <th scope="col">Very Satisfied</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" width="25%">Purchase</th>
+                        <td> <input type="radio" name="Purchase" value="#"></td>
+                        <td><input type="radio" name="Purchase" value="#"></td>
+                        <td><input type="radio" name="Purchase" value="#"></td>
+                        <td><input type="radio" name="Purchase" value="#"></td>
+                        <td><input type="radio" name="Purchase" value="#"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">Servie</th>
+                        <td> <input type="radio" name="Servie" value="#"></td>
+                        <td><input type="radio" name="Servie" value="#"></td>
+                        <td><input type="radio" name="Servie" value="#"></td>
+                        <td><input type="radio" name="Servie" value="#"></td>
+                        <td><input type="radio" name="Servie" value="#"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">Company Overall</th>
+                        <td> <input type="radio" name="Company" value="#"></td>
+                        <td><input type="radio" name="Company" value="#"></td>
+                        <td><input type="radio" name="Company" value="#"></td>
+                        <td><input type="radio" name="Company" value="#"></td>
+                        <td><input type="radio" name="Company" value="#"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <div>
+            <h3 class="font-weight-bold">How Likely are you to ? <span style=color:red;>*</span></h3>
+            <table class="table my-4 table-striped table-hover" width=100% required>
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Very Unlikely</th>
+                        <th scope="col">Unlikely</th>
+                        <th scope="col">Neutral</th>
+                        <th scope="col">Likely</th>
+                        <th scope="col">Very Likely</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row" width="25%">Buy From Us Again</th>
+                        <td> <input type="radio" name="Buy" value="#"></td>
+                        <td><input type="radio" name="Buy" value="#"></td>
+                        <td><input type="radio" name="Buy" value="#"></td>
+                        <td><input type="radio" name="Buy" value="#"></td>
+                        <td><input type="radio" name="Buy" value="#"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">Recommend our Products To Others</th>
+                        <td> <input type="radio" name="Products" value="#"></td>
+                        <td><input type="radio" name="Products" value="#"></td>
+                        <td><input type="radio" name="Products" value="#"></td>
+                        <td><input type="radio" name="Products" value="#"></td>
+                        <td><input type="radio" name="Products" value="#"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">Recommend our Company To Others</th>
+                        <td> <input type="radio" name="Recommend" value="#"></td>
+                        <td><input type="radio" name="Recommend" value="#"></td>
+                        <td><input type="radio" name="Recommend" value="#"></td>
+                        <td><input type="radio" name="Recommend" value="#"></td>
+                        <td><input type="radio" name="Recommend" value="#"></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+        <div class="col-sm-8 form-group">
+            <p for="textarea" class="font-weight-bold">Additional Comments or Suggestions</p>
+            <textarea name="comments" id='comments' cols="100%" rows=""></textarea>
+            <button type='submit' class="btn btn-primary" id="submit" value="submit">Submit</button>
+        </div>
+
     </form>
-    <div>
-        <h3 class="font-weight-bold">How satisfied are you with ? <span style=color:red;>*</span></h3>
-        <table class="table my-4 table-striped table-hover" width=100% required>
-
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Very Unsatisfied</th>
-                    <th scope="col">Unsatisfied</th>
-                    <th scope="col">Neutral</th>
-                    <th scope="col">Satisfied</th>
-                    <th scope="col">Very Satisfied</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row" width="25%">Purchase</th>
-                    <td> <input type="radio" name="Purchase"></td>
-                    <td><input type="radio" name="Purchase"></td>
-                    <td><input type="radio" name="Purchase"></td>
-                    <td><input type="radio" name="Purchase"></td>
-                    <td><input type="radio" name="Purchase"></td>
-
-                </tr>
-                <tr>
-                    <th scope="row" width="25%">Servie</th>
-                    <td> <input type="radio" name="Servie"></td>
-                    <td><input type="radio" name="Servie"></td>
-                    <td><input type="radio" name="Servie"></td>
-                    <td><input type="radio" name="Servie"></td>
-                    <td><input type="radio" name="Servie"></td>
-                </tr>
-                <tr>
-                    <th scope="row" width="25%">Company Overall</th>
-                    <td> <input type="radio" name="Company"></td>
-                    <td><input type="radio" name="Company"></td>
-                    <td><input type="radio" name="Company"></td>
-                    <td><input type="radio" name="Company"></td>
-                    <td><input type="radio" name="Company"></td>
-                </tr>
-            </tbody>
-
-        </table>
-    </div>
-
-    <div>
-        <h3 class="font-weight-bold">How Likely are you to ? <span style=color:red;>*</span></h3>
-        <table class="table my-4 table-striped table-hover" width=100% required>
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Very Unlikely</th>
-                    <th scope="col">Unlikely</th>
-                    <th scope="col">Neutral</th>
-                    <th scope="col">Likely</th>
-                    <th scope="col">Very Likely</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <th scope="row" width="25%">Buy From Us Again</th>
-                    <td> <input type="radio" name="Buy"></td>
-                    <td><input type="radio" name="Buy"></td>
-                    <td><input type="radio" name="Buy"></td>
-                    <td><input type="radio" name="Buy"></td>
-                    <td><input type="radio" name="Buy"></td>
-
-                </tr>
-                <tr>
-                    <th scope="row" width="25%">Recommend our Products To Others</th>
-                    <td> <input type="radio" name="Products"></td>
-                    <td><input type="radio" name="Products"></td>
-                    <td><input type="radio" name="Products"></td>
-                    <td><input type="radio" name="Products"></td>
-                    <td><input type="radio" name="Products"></td>
-                </tr>
-                <tr>
-                    <th scope="row" width="25%">Recommend our Company To Others</th>
-                    <td> <input type="radio" name="Recommend"></td>
-                    <td><input type="radio" name="Recommend"></td>
-                    <td><input type="radio" name="Recommend"></td>
-                    <td><input type="radio" name="Recommend"></td>
-                    <td><input type="radio" name="Recommend"></td>
-                </tr>
-
-            </tbody>
-
-        </table>
-    </div>
-    <div clas="col-sm-8">
-        <p for="textarea" class="font-weight-bold">Additional Comments or Suggestions</p>
-        <textarea name="" id="textarea" cols="100%" rows=""></textarea>
-        <button type="button" class="btn btn-light border-dark">Submit</button>
-    </div>
-
-
 
 
 
@@ -165,5 +170,7 @@
 
 
 </body>
+<script src="script.js"></script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 
 </html>

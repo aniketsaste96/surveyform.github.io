@@ -34,10 +34,36 @@ input.star-1:checked ~ label.star:before {
 }
 
 label.star:hover {
-  transform: rotate(-15deg) scale(1.3);
+  transform: rotate(-15deg) scale(1.5);
 }
 
 label.star:before {
   content: "\f006";
   font-family: FontAwesome;
+}
+
+button:hover {
+  background-color: blue !important;
+  color: white !important;
+  transition: 0.5s;
+  transform: scale(1.3);
+}
+@media screen and (max-width: 400px) {
+  .star-rating {
+    width: 87px;
+    height: 17px;
+  }
+}
+
+@media screen and (max-width: 215px) {
+  .star-rating {
+    width: 43px;
+    height: 16px;
+  }
+}
+@media screen and (max-width: 150px) {
+  .star-rating {
+    width: 21px;
+    height: 8px;
+  }
 }
